@@ -1,9 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <link rel="stylesheet" href="bll.css">
+  <meta charset="UTF-8" />
+  <title>Girlie Switch with Ocean</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <p>Haiii </p>
+  <!-- Canvas background bintang -->
+  <canvas id="starCanvas"></canvas>
+
+  <!-- Nintendo Switch -->
+  <div class="switch">
+    <div class="joycon left">
+      <div class="direction-pad">
+        <button class="up" data-action="Atas">^</button>
+        <button class="down" data-action="Bawah">v</button>
+        <button class="left" data-action="Kiri">&lt;</button>
+        <button class="right" data-action="Kanan">&gt;</button>
+      </div>
+    </div>
+
+    <div class="screen">
+      <canvas id="oceanCanvas" width="350" height="300"></canvas>
+      <div id="textScreen">
+        <img id="sprite" src="" alt="" />
+        <span id="textLabel">Tekan Tombol</span>
+      </div>
+    </div>
+
+    <div class="joycon right">
+      <div class="action-pad">
+        <button data-action="A">A</button> <!-- aku menambahkan apa saja-->
+        <button data-action="B">B</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Info -->
+  <footer>
+    NIM: 12345678 | Nama: Mutama | <a href="https://github.com/username" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
